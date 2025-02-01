@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 * {
     margin: 0;
@@ -19,6 +20,7 @@ body {
     padding: 30px 8%;
     background: transparent;
     display: flex;
+    backdrop-filter: sepia(19%);
     justify-content: space-between;
     align-items: center;
     z-index: 100;
@@ -226,11 +228,12 @@ body {
     margin-left: 64rem;
     margin-top: 3rem;
 }
-.heading h3 {
+.about .heading h3 {
     font-size: 32px;
     color: #1743e3;
-    margin-left: -14rem;
-    margin-top: 3rem;
+    margin-left: -13rem;
+    margin-top: 6rem;
+  
    
 
 }
@@ -240,9 +243,7 @@ body {
      margin-top: 2rem;
      align-items: center;
      gap: 1rem;
-     margin-top: 1rem;
-     
-     
+        
 }
 .about-text span {
     font-weight: 1000;
@@ -256,6 +257,16 @@ body {
 .about-img img {
     width: 100%;
     right: 100px;
+    margin-top: 14rem;
+}
+.about-text .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 1px 4px 41px rgba(0, 0, 0, .1);
+    border-radius: 0.3rem;
 }
 .about-text p {
     margin: 0.5rem 0 1.4rem;
@@ -266,17 +277,45 @@ body {
     padding: 10px 20px;
     border-radius: 0.5rem;
 }
+.reviews {
+    position: center;
+  
+    overflow: hidden;
+}
+.heading {
+    font-size: 19px;
+    
+    margin-left: 64rem;
+    margin-top: 3rem;
+}
+.heading h3 {
+    position: absolute;
+    font-size: 32px;
+    color: #1743e3;
+    margin-left: -15rem;
+    margin-top: 3rem;
+   
+
+}
+.reviews .heading p {
+    position: absolute;
+    font-size: 18px;
+    margin-top: 6rem;
+    margin-left: -18rem;
+
+}
 .reviews-container {
+    position: absolute;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(250px,auto));
     gap: 1rem;
-    margin-top: 8rem;
+    margin-top: 18rem;
+    left: 1rem;
 
 }
 .reviews-container p {
     font-size: 19px;
-    margin: 15px 0 30px;
-    color: #1743e3;
+     color: #1743e3;
     font-weight: 300;
 }
 .rev-img {
@@ -370,8 +409,9 @@ body {
     }
 } 
 .contact h2 {
+    padding: 8%;
     margin-bottom: 3rem;
-    margin-left: 54rem;
+    margin-left: 46rem;
     margin-top: 40rem;
     color: #1743e3;
 }
